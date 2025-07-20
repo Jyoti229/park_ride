@@ -54,11 +54,9 @@ park_ride/
    git clone https://github.com/your-username/park_ride.git
    
 2. Navigate into the project directory:
+   cd park_ride
 
-bash
-Copy
-Edit
-cd park_ride
+
 
 3.Install the required dependencies:
 
