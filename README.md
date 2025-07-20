@@ -122,7 +122,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👤 Author
+## Author
 
 **Your Name**  
 - GitHub: [Jyoti229](https://github.com/Jyoti229)
