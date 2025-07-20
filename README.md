@@ -54,22 +54,15 @@ park_ride/
    git clone https://github.com/your-username/park_ride.git
    
 2. Navigate into the project directory:
+   ```bash
    cd park_ride
-
-
-
-3.Install the required dependencies:
-
-bash
-Copy
-Edit
+   
+3. Install the required dependencies:
+```bash
 pip install -r requirements.txt
 
 4. Apply migrations:
-
-bash
-Copy
-Edit
+```bash
 python manage.py migrate
 
 5.Create a superuser:
