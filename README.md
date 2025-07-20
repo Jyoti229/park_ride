@@ -125,5 +125,5 @@ This project is licensed under the MIT License.
 ## 👤 Author
 
 **Your Name**  
-- GitHub: [your-username](https://github.com/Jyoti229)
-- LinkedIn: [Your Profile](https://linkedin.com/in/jyoti-ai-maestro/)
+- GitHub: [Jyoti229](https://github.com/Jyoti229)
+- LinkedIn: [jyoti-ai-maestro](https://linkedin.com/in/jyoti-ai-maestro/)
