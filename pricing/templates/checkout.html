@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Checkout{% endblock %}
+{% block content %}
+<div class="card shadow p-4">
+    <h2 class="mb-4">Checkout</h2>
+    <p><strong>Ride Details:</strong></p>
+    <ul>
+        <li>Pickup: {{ ride.pickup }}</li>
+        <li>Drop: {{ ride.drop }}</li>
+        <li>Date: {{ ride.date }}</li>
+        <li>Time: {{ ride.time }}</li>
+        <li>Amount: ₹{{ amount }}</li>
+    </ul>
+    <form method="post" action="{% url 'pricing:payment' %}">
+        {% csrf_token %}
+        <input type="hidden" name="ride_id" value="{{ ride.id }}">
+        <button type="submit" class="btn btn-success">Proceed to Payment</button>
+        <a href="{% url 'rides:ride_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

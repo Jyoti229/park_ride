@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Ride List{% endblock %}
+{% block content %}
+<div class="card shadow p-4">
+    <h2 class="mb-4">Available Rides</h2>
+    <a href="{% url 'rides:ride_booking' %}" class="btn btn-primary mb-3">Book a New Ride</a>
+    {% if rides %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Pickup</th>
+                    <th>Drop</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ride in rides %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ ride.pickup }}</td>
+                    <td>{{ ride.drop }}</td>
+                    <td>{{ ride.date }}</td>
+                    <td>{{ ride.time }}</td>
+                    <td>{{ ride.status|default:"Pending" }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No rides booked yet.</p>
+    {% endif %}
+</div>
+{% endblock %}
